@@ -25,7 +25,7 @@ export function ProjectsCards() {
           </a>
         </p>
         <p className="text-sm text-center text-neutral-500 relative z-20 t-10">
-          Designed by Mukund Solanki, all rights reserved
+          Give it a ⭐, if you like it :)
         </p>
       </div>
     </div>
