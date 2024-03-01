@@ -61,7 +61,7 @@ const dummyContent = [
         </li>
         <li>
           Earned recognition for outstanding performance, securing a cash prize
-          of Rupees 30,000 as a testament to your team&apos;s innovative solutions
+          of Rupees 30,000 as a testament to our team&apos;s innovative solutions
           and technical prowess.
         </li>
         <li>
@@ -91,14 +91,14 @@ const dummyContent = [
         <li>
           Secured the first position at HackCBS 6.0, showcasing exceptional
           skills, creativity, and problem-solving abilities, and earning
-          recognition for your team&apos;s outstanding performance.
+          recognition for our team&apos;s outstanding performance.
         </li>
         <li>
           Received significant rewards, including a cash
           prize of rupees 40,000, Logitech MX Master 3S series mice for each team
           member, and prizes worth $15,000. Additionally, being honored with
           swags and merchandise from sponsors like MLH and GitHub further
-          highlights your team&apos;s success and industry recognition.
+          highlights our team&apos;s success and industry recognition.
         </li>
         <li>
           Engaged with esteemed sponsors including Major League Hacking, Ton,
