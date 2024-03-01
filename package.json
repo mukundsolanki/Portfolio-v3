@@ -13,10 +13,11 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.2",
     "clsx": "^2.1.0",
-    "framer-motion": "^11.0.6",
+    "framer-motion": "^11.0.7",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.1.0",
     "react": "^18",
+    "react-animated-cursor": "^2.11.2",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
     "tailwind-merge": "^2.2.1"
