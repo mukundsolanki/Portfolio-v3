@@ -26,6 +26,7 @@ body {
     rgb(var(--background-start-rgb));
     scrollbar-width: none;
     -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -49,8 +50,8 @@ body {
   bottom: 20px;
   right: 20px;
   z-index: 999;
-  background-color: #000000;
-  color: white;
+  background-color: rgb(233, 233, 233);
+  color: black;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
