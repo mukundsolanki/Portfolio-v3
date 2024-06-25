@@ -27,7 +27,7 @@ export function ExperienceInfo() {
 
 const dummyContent = [
   {
-    title: "Mobile Developer - GDSC",
+    title: "Analyst Software/Ethical Hacker Trainee - Siesa",
     description: (
       <ul className="list-disc ml-6">
         <li>

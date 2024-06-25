@@ -23,11 +23,11 @@ export function Hero() {
   // Because of this added the indedx[1] char twice
   // Todo: Fix later
   const greetings = [
-    "Heello",
-    "नममस्ते",
-    "こんんにちは",
-    "안녕녕하세요",
-    "Прривет",
+    "Hoola ",
+    "Heello ",
+    "こんんにちは ",
+    "안녕녕하세요 ",
+    "Прривет ",
   ];
   const [currentGreetingIndex, setCurrentGreetingIndex] = useState(0);
   const [typedGreeting, setTypedGreeting] = useState("");
@@ -37,7 +37,7 @@ export function Hero() {
       setCurrentGreetingIndex(
         (prevIndex) => (prevIndex + 1) % greetings.length
       );
-    }, 3000);
+    }, 2995);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -62,18 +62,19 @@ export function Hero() {
 
   return (
     <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="white"
+        fill="green"
       />
       <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
-        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-40">
           {typedGreeting} <br /> I am Juan Felipe Oz.
         </h1>
-        <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-          Software developer from India, specializes in web development, mobile
-          app development, IoT, and AI/ML. With a passion for innovation and a
-          commitment to excellence.
+        <p className="mt-4 font-normal text-lg text-neutral-300 max-w-lg text-center mx-auto">
+          Software developer/Information Security Enthusiast from Colombia, focused on web pentesting, Backend
+          Django development, and AI/ML. with a passion for what's new and a commitment to 
+                    be better every day, to make the digital world safer and safer.
         </p>
 
         <div className="flex justify-center mt-4">
@@ -83,7 +84,7 @@ export function Hero() {
             </span>
             <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
               <a
-                href="https://drive.google.com/file/d/1fQIS8zBiTVAm-eN7OkrNDLZWHBCQAaxS/view?usp=sharing"
+                href="https://drive.google.com/file/d/1V4XqmZSFczLHpGyt5f5dflhXKJL9-3kh/view?usp=sharing"
                 target="_blank"
               >
                 <span>See Resume</span>

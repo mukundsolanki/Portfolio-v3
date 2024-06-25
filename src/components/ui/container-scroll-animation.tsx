@@ -2,33 +2,21 @@
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import {
-  FaCss3,
-  FaHtml5,
-  FaJava,
-  FaNode,
   FaPython,
-  FaReact,
 } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiExpress } from "react-icons/si";
-import { SiDart } from "react-icons/si";
-import { RiFlutterFill } from "react-icons/ri";
-import { TbBrandKotlin } from "react-icons/tb";
-import { FaAndroid } from "react-icons/fa6";
-import { SiMongodb } from "react-icons/si";
+import { SiBurpsuite } from "react-icons/si";
+import { SiKalilinux } from "react-icons/si";
+import { SiParrotsecurity } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiGnubash } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
-import { SiArduino } from "react-icons/si";
-import { FaRaspberryPi } from "react-icons/fa";
-import { FaGolang } from "react-icons/fa6";
-import { SiTypescript } from "react-icons/si";
+import { DiScrum } from "react-icons/di";
+import { DiDjango } from "react-icons/di";
 import { FaGitAlt } from "react-icons/fa";
-import { FaDigitalOcean } from "react-icons/fa";
 import { FaLinux } from "react-icons/fa";
-import { SiSvelte } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiTailwindcss } from "react-icons/si";
-import { BackgroundGradientAnimation } from "../ui/background-gradient-animation";
+
 
 export const ContainerScroll = ({
   // users,
@@ -62,14 +50,17 @@ export const ContainerScroll = ({
   const scaleDimensions = () => {
     return isMobile ? [0.7, 0.9] : [1.05, 1];
   };
-
-  const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  // Elimine la animación del panel de tecnologías ya que no se ve bien, y por optimizar la pagina. 
+  // const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
+  // const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
+  // const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const rotate = 1;
+  const scale = 1; 
+  const translate = -82;
 
   return (
     <div
-    className="h-[50rem] md:h-[60rem] flex items-center justify-center relative p-2 md:p-10" // Decreased padding for medium screens and above
+      className="h-[50rem] md:h-[60rem] flex items-center justify-center relative p-2 md:p-10" // Decreased padding for medium screens and above
       ref={containerRef}
     >
       <div
@@ -83,8 +74,9 @@ export const ContainerScroll = ({
           rotate={rotate}
           translate={translate}
           scale={scale}
-          // users={users}
+        // users={users}
         />
+        
       </div>
     </div>
   );
@@ -108,17 +100,17 @@ export const Card = ({
   scale,
   translate,
 }: // users,
-{
-  rotate: any;
-  scale: any;
-  translate: any;
-  // users: {
-  //   name: string;
-  //   designation: string;
-  //   image: string;
-  //   badge?: string;
-  // }[];
-}) => {
+  {
+    rotate: any;
+    scale: any;
+    translate: any;
+    // users: {
+    //   name: string;
+    //   designation: string;
+    //   image: string;
+    //   badge?: string;
+    // }[];
+  }) => {
   return (
     <motion.div
       style={{
@@ -129,7 +121,7 @@ export const Card = ({
       className="max-w-5xl -mt-12 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-6 bg-[#222222] rounded-[30px] shadow-2xl"
     >
       <div
-        className="h-full w-full rounded-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden p-4"
+        className="h-full w-full rounded-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-hidden p-4"
         style={{
           background: "#bdc3c7" /* fallback for old browsers */,
           backgroundImage:
@@ -138,80 +130,42 @@ export const Card = ({
         }}
       >
         <div className="flex justify-center items-center">
-          <TbBrandCpp className="text-4xl text-black" />
+          <FaGitAlt className="text-6xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <FaJava className="text-4xl text-black" />
+          <TbBrandCpp className="text-6xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <FaPython className="text-4xl text-black" />
+          <FaPython className="text-6xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <IoLogoJavascript className="text-4xl text-black" />
+          <DiDjango className="text-7xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <FaHtml5 className="text-4xl text-black" />
+          <SiPostgresql className="text-6xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <FaCss3 className="text-4xl text-black" />
+          <DiMysql className="text-6xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <FaReact className="text-4xl text-black" />
+          <SiGnubash className="text-6xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <FaNode className="text-4xl text-black" />
+          <SiBurpsuite className="text-6xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <SiExpress className="text-4xl text-black" />
+          <SiKalilinux className="text-7xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <SiDart className="text-4xl text-black" />
+          <FaLinux className="text-6xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <RiFlutterFill className="text-4xl text-black" />
+          <SiParrotsecurity className="text-6xl text-black" />
         </div>
         <div className="flex justify-center items-center">
-          <TbBrandKotlin className="text-4xl text-black" />
+          <DiScrum className="text-6xl text-black" />
         </div>
-        <div className="flex justify-center items-center">
-          <FaAndroid className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <SiMongodb className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <DiMysql className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <SiArduino className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <FaRaspberryPi className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <FaGolang className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <SiTypescript className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <FaGitAlt className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <FaDigitalOcean className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <FaLinux className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <SiSvelte className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <TbBrandNextjs className="text-4xl text-black" />
-        </div>
-        <div className="flex justify-center items-center">
-          <SiTailwindcss className="text-4xl text-black" />
-        </div>
+
         {/* Add more icons wrapped in centered divs */}
       </div>
     </motion.div>
