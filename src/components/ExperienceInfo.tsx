@@ -2,7 +2,9 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-//const portS = require('./src/components/images/ProgressPortSwigger.png');
+const portS = '/ProgressPortSwigger.png';
+const pentesterL = '/pentesterlab.png';
+
 
 
 
@@ -23,7 +25,14 @@ export function ExperienceInfo() {
             </div>
             {item.image && (
               <img
-                src={'./src/components/images/ProgressPortSwigger.png'}
+                src={portS}
+                alt={item.title}
+                className="w-full h-auto rounded-lg mt-3"
+              />
+            )}
+            {item.image2 && (
+              <img
+                src={pentesterL}
                 alt={item.title}
                 className="w-full h-auto rounded-lg mt-3"
               />
@@ -77,26 +86,27 @@ const dummyContent = [
     description: (
       <ul className="list-disc ml-6">
         <li>
-        I have been able to solve over 218 labs on the Portswigger and Pentesterlab platform covering topics such as:
-        SSRF, SQLi, Disclosure Information, LLM Attacks, ClickJacking, SSTI, OS Command Injection, Path Traversal, File Upload, File Include,
-        Access Control, Authentication/Authorization, Web Sockets, UNIX Systems, XSS (In Progress).
+          I have been able to solve over 218 labs on the Portswigger and Pentesterlab platform covering topics such as:
+          SSRF, SQLi, Disclosure Information, LLM Attacks, ClickJacking, SSTI, OS Command Injection, Path Traversal, File Upload, File Include,
+          Access Control, Authentication/Authorization, Web Sockets, UNIX Systems, XSS (In Progress).
 
         </li>
       </ul>
     ),
-    image: "",
+    image: "/ProgressPortSwigger",
+    image2: "/pentesterlab",
   },
   {
     title: "My Blog in Medium :)",
     description: (
       <ul className="list-disc ml-6">
         <li>
-        In my spare time, I write on my personal blog about various topics related to computer security and software, 
-        from how AES hashing and Keccak states work in cryptography to how to set up dynamic routing between two LANs.
+          In my spare time, I write on my personal blog about various topics related to computer security and software,
+          from how AES hashing and Keccak states work in cryptography to how to set up dynamic routing between two LANs.
         </li>
         <li>
-        Passionate about learning every day, every new topic is a great opportunity to expose it to the public, 
-        to teach it, to give the opportunity to someone who is in the same process as me to learn and not give up. 
+          Passionate about learning every day, every new topic is a great opportunity to expose it to the public,
+          to teach it, to give the opportunity to someone who is in the same process as me to learn and not give up.
         </li>
       </ul>
     ),
