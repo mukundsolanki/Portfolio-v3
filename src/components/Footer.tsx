@@ -3,6 +3,8 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+//import { FaGithub } from "react-icons/fa6";
+import { PiMediumLogoFill } from "react-icons/pi";
 export function Footer() {
   return (
     <div>
@@ -17,20 +19,24 @@ export function Footer() {
          */}
 
         <div className="flex space-x-4 text-4xl relative z-20">
-          <a href="https://www.linkedin.com/in/mukund-solanki-10a558250/" target="_blank">
+        <a href="https://medium.com/@juanfelipeoz.rar" target="_blank">
+            <PiMediumLogoFill  className="text-neutral-500 hover:text-white transition-colors duration-300" />
+          </a>
+          <a href="https://www.linkedin.com/in/juanfelipeoz" target="_blank">
             <FaLinkedin className="text-neutral-500 hover:text-white transition-colors duration-300" />
           </a>
-          <a href="https://twitter.com/Mukund_solanki_" target="_blank">
+          <a href="https://x.com/PwnedRar_" target="_blank">
             <FaXTwitter className="text-neutral-500 hover:text-white transition-colors duration-300" />
           </a>
-          <a href="mailto:mukundsolanki665@gmail.com" target="_blank">
+          <a href="mailto:juanfelipeoz.rar@gmail.com" target="_blank">
             <MdEmail className="text-neutral-500 hover:text-white transition-colors duration-300" />
           </a>
         </div>
-
+{/*
         <p className="text-sm text-center text-neutral-500 relative z-20 mt-5">
           Designed by Mukund Solanki, all rights reserved!
         </p>
+ */}
       </div>
     </div>
   );
