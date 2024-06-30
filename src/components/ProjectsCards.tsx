@@ -46,7 +46,7 @@ export const projects = [
   {
     title: "CryptoHack",
     description:
-      "A repository with the compilation of all my cryptographic knowledge converted to python code.",
+      "A repository with the compilation of all my cryptographic knowledge converted to python code with the platform Cryptohack.",
     link: "https://github.com/JFOZ1010/CryptoHack",
   },
   {
