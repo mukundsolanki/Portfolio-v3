@@ -62,7 +62,7 @@ export const SparklesCore = (props: ParticlesProps) => {
           options={{
             background: {
               color: {
-                value: background || "#0d47a1",
+                value: background || "#8fce00",
               },
             },
             fullScreen: {
@@ -186,7 +186,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 drift: 0,
                 enable: true,
                 gravity: {
-                  acceleration: 9.81,
+                  acceleration: 15.81,
                   enable: false,
                   inverse: false,
                   maxSpeed: 50,

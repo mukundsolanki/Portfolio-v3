@@ -32,39 +32,27 @@ export function ProjectsCards() {
 }
 export const projects = [
   {
-    title: "WebLink",
+    title: "GPU-Hunter",
     description:
-      "WebLink is a web application created using SvelteJS ,allow user to create their portfolio for all their links in one place.",
-    link: "https://github.com/mukundsolanki/WebLink",
+      "GPU Hunter is a bot built in Python Selenium that allows to automate the whole process of finding the graphics card at the best price, alerting via emai in a nice hypertext message.",
+    link: "https://github.com/JFOZ1010/GPU-HunterBot",
   },
   {
-    title: "Pi-Drop",
+    title: "AES-Sauron",
     description:
-      "A Flutter based mobile application to use Raspberry Pi as NAS Server. allows user to use there NAS from anywhere",
-    link: "https://github.com/mukundsolanki/Pi-Drop",
+      "Hacking tool created to be able to encrypt and decrypt ciphertext using the AES-128 bit algorithm.",
+    link: "https://github.com/JFOZ1010/AES-Sauron",
   },
   {
-    title: "DevLit-v2",
+    title: "CryptoHack",
     description:
-      "A web-based Code Editor built with React. It allows users to write and run HTML, CSS, and JavaScript code in real-time, providing a live output preview.",
-    link: "https://github.com/mukundsolanki/Devlit-v2",
+      "A repository with the compilation of all my cryptographic knowledge converted to python code.",
+    link: "https://github.com/JFOZ1010/CryptoHack",
   },
   {
-    title: "Quizit",
+    title: "DjangoAuth APP",
     description:
-      "Quizit👀 is a Flutter-based mobile application that allows users to complete quizzes and receive a certificate upon completing all the quizzes.",
-    link: "https://github.com/mukundsolanki/Quizit-the-quiz-app",
-  },
-  {
-    title: "SyncPad",
-    description:
-      "Flutter application that allows you to control your computer mouse movements remotely using your mobile device as a touchpad.",
-    link: "https://github.com/mukundsolanki/SyncPad",
-  },
-  {
-    title: "RapidLink",
-    description:
-      "A URL Shortener service implemented using GoLang, currently working on this project",
-    link: "https://github.com/mukundsolanki/RapidLink-URL-shortener",
+      "Application built with Django Python, creating a whole CRUD system, with login and signup authentication.",
+    link: "https://github.com/JFOZ1010/DjangoAuth-CRUD",
   },
 ];

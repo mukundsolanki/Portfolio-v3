@@ -23,12 +23,15 @@ export function Hero() {
   // Because of this added the indedx[1] char twice
   // Todo: Fix later
   const greetings = [
-    "Hoola ",
     "Heello ",
+    "Hoola ",
     "こんんにちは ",
     "안녕녕하세요 ",
     "Прривет ",
   ];
+  greetings.pop();
+
+  //console.log("greetings: ", greetings)
   const [currentGreetingIndex, setCurrentGreetingIndex] = useState(0);
   const [typedGreeting, setTypedGreeting] = useState("");
 
