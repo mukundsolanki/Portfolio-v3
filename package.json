@@ -12,6 +12,7 @@
     "@tsparticles/engine": "^3.2.2",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.2",
+    "axios": "^1.7.2",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.7",
     "mini-svg-data-uri": "^1.4.4",

@@ -2,6 +2,7 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import Blog from "@/components/ui/blog"; 
 const portS = '/ProgressPortSwigger.png';
 const pentesterL = '/pentesterlab.png';
 
@@ -40,7 +41,9 @@ export function ExperienceInfo() {
           </div>
         ))}
       </div>
+      <Blog/>
     </TracingBeam>
+
   );
 }
 
@@ -112,5 +115,6 @@ const dummyContent = [
     ),
     badge: "💡 Security Chronicles",
     image: "",
+    blog:"",
   },
 ];
