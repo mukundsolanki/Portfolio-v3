@@ -12,7 +12,7 @@ export function HeroScrollDemo() {
           // users={users}
           titleComponent={
             <>
-              <h1 className="text-4xl font-semibold text-black dark:text-white">
+              <h1 className="text-4xl font-semibold text-white">
                 Here are some
                 <br />
                 <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">

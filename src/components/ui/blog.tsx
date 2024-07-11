@@ -36,7 +36,7 @@ const Blog = () => {
             {/* <h2 className="bg-black text-white rounded-medium text-1xl font-bold w-fit  py-2 mb-1 mx-auto text-center">
               <a href={post.link} target="_blank" rel="noopener noreferrer">{post.title}</a>
             </h2>   */}
-            <a href={post.link} className="block m-auto max-w-sm p-6 h-full bg-gray-300 outline outline-offset-4 outline-2 outline-green-100 rounded-lg shadow hover:bg-gray-100 transition duration-300">
+            <a href={post.link} target="_blank" className="block m-auto max-w-sm p-6 h-full bg-gray-300 outline outline-offset-4 outline-2 outline-green-100 rounded-lg shadow hover:bg-gray-100 transition duration-300">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h5>
               <p className="font-normal text-[10px] text-gray-700 dark:text-gray-400">Medium:@juanfelipeoz.rar</p>
             </a>

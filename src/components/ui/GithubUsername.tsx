@@ -11,7 +11,7 @@ export function GithubUsername() {
     <div className="flex items-center justify-center bg-[#0E0E10] h-[40rem] rounded-2xl w-full">
       <TextRevealCard
         text="Swipe to see"
-        revealText="github.com/mukundsolanki"
+        revealText="github.com/JFOZ1010"
       >
         <TextRevealCardTitle>
           Checkout here.
