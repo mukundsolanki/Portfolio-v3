@@ -8,7 +8,7 @@ const Blog = () => {
       .get("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@juanfelipeoz.rar")
       .then((res) => {
         setPosts(res.data.items);
-        //console.log("Res data", res.data)
+        console.log("Res data", res.data)
       })
       .catch((error) => {
         console.error("Error fetching blog posts:", error);
@@ -30,18 +30,21 @@ const Blog = () => {
 
   return (
     <div>
-      <div style={{ textAlign: 'center' }}>
+      <div className="grid grid-cols-2 gap-8 mb-5">
         {sortedAndSelectedPosts.map((post) => (
           <div key={post.guid}>
-            <h2 className="bg-black text-white rounded-medium text-1xl font-bold w-fit  py-2 mb-1">
-              <li>
+            {/* <h2 className="bg-black text-white rounded-medium text-1xl font-bold w-fit  py-2 mb-1 mx-auto text-center">
               <a href={post.link} target="_blank" rel="noopener noreferrer">{post.title}</a>
-              </li>
-            </h2>
+            </h2>   */}
+            <a href={post.link} className="block m-auto max-w-sm p-6 h-full bg-gray-300 outline outline-offset-4 outline-2 outline-green-100 rounded-lg shadow hover:bg-gray-100 transition duration-300">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h5>
+              <p className="font-normal text-[10px] text-gray-700 dark:text-gray-400">Medium:@juanfelipeoz.rar</p>
+            </a>
           </div>
         ))}
       </div>
     </div>
+
   );
 };
 export default Blog;

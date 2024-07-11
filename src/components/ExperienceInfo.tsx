@@ -15,7 +15,7 @@ export function ExperienceInfo() {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-4xl font-bold w-fit  py-2 mb-4">
+            <h2 className="bg-black text-white rounded-full text-5xl font-bold w-fit  py-2 mb-4">
               {item.badge}
             </h2>
 
@@ -24,24 +24,31 @@ export function ExperienceInfo() {
             <div className="text-2-1 prose prose-sm dark:prose-invert">
               {item.description}
             </div>
+
+            <h2 className="bg-black text-white rounded-full text-4xl font-bold w-fit py-2 mb-4 mx-auto text-center">
+              {item.subtitle1}
+            </h2>
             {item.image && (
               <img
                 src={portS}
                 alt={item.title}
-                className="w-full h-auto rounded-lg mt-3"
+                className="w-full h-auto rounded-lg outline outline-offset-4 outline-2 outline-green-100 hover:scale-110 my-6 transition ease-in-out duration-300 m-auto"
               />
             )}
+            <h2 className="bg-black text-white rounded-full text-4xl font-bold w-fit py-2 mb-4 mx-auto text-center">
+              {item.subtitle2}
+            </h2>
             {item.image2 && (
               <img
                 src={pentesterL}
                 alt={item.title}
-                className="w-full h-auto rounded-lg mt-3"
+                className="w-full h-auto rounded-lg outline outline-offset-4 outline-2 outline-green-100 hover:scale-110  my-6 transition ease-in-out duration-300 m-auto"
               />
             )}
           </div>
         ))}
+        <Blog/>
       </div>
-      <Blog/>
     </TracingBeam>
 
   );
@@ -85,7 +92,7 @@ const dummyContent = [
     image: "",
   },
   {
-    title: "PortSwigger Web Academy - Pentesterlab",
+    title: "Platforms Web Academy",
     description: (
       <ul className="list-disc ml-6">
         <li>
@@ -96,7 +103,9 @@ const dummyContent = [
         </li>
       </ul>
     ),
+    subtitle1: "PortSwigger",
     image: "/ProgressPortSwigger",
+    subtitle2: "PentesterLab",
     image2: "/pentesterlab",
   },
   {
