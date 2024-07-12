@@ -7,12 +7,12 @@ export function QuoteWithBackground() {
       <MaskContainer
         revealText={
           <p className="max-w-4xl mx-auto text-white text-opacity-50 text-center  text-4xl font-bold">
-            Make it work, make it right, make it fast.
+            Make it secure, make it resilient, make it efficient.
           </p>
         }
         className="h-[40rem]"
       >
-        Make it <span className="text-red-500">work</span>, make it <span className="text-red-500">right</span>, make it <span className="text-red-500">fast</span>.
+        Make it <span className="text-green-400">secure</span>, make it <span className="text-green-400">resilient</span>, make it <span className="text-green-400">efficient</span>.
       </MaskContainer>
     </div>
   );

@@ -37,7 +37,7 @@ export const MaskContainer = ({
     };
   }, []);
   let maskSize = isHovered ? revealSize : size;
-  const imageSrc = "/background-Felipe.jpeg";
+  const imageSrc = "/background-prueba.jpeg";
 
   return (
     <motion.div
