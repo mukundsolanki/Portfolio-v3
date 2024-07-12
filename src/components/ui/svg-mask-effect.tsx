@@ -37,7 +37,7 @@ export const MaskContainer = ({
     };
   }, []);
   let maskSize = isHovered ? revealSize : size;
-  const imageSrc = "/background.jpg";
+  const imageSrc = "/background-Felipe.jpeg";
 
   return (
     <motion.div
@@ -48,7 +48,7 @@ export const MaskContainer = ({
       }}
     >
       <motion.div
-        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]"
+        className="w-full h-full flex items-center justify-center text-6xl absolute [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]"
         animate={{
           WebkitMaskPosition: `${mousePosition.x - maskSize / 2}px ${
             mousePosition.y - maskSize / 2
