@@ -1,5 +1,3 @@
-## Live at: https://www.mukund4s.live/
-
 ## Getting Started
 
 First, run the development server:
